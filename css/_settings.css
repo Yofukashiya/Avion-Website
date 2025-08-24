@@ -5,10 +5,11 @@
 }
 
 .page {
+	line-height: 1.5;
 }
 
 .page__body {
-	font-family: sans-serif;
+	font-family: var(--font-family), sans-serif;
 }
 
 .container {
