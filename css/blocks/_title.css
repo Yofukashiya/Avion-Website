@@ -14,6 +14,10 @@
 	font-size: 32px;
 }
 
+.title--large-xl {
+	font-size: 36px;
+}
+
 .title--centered {
 	text-align: center;
 }
@@ -24,4 +28,8 @@
 
 .title--mb-small {
 	margin-bottom: 32px;
+}
+
+.title--mb-small-xs {
+	margin-bottom: 12px;
 }

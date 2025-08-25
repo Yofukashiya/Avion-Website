@@ -1,0 +1,19 @@
+.form {
+	display: flex;
+	align-items: center;
+}
+
+.form__input {
+	padding: 16px 32px;
+	border: none;
+	width: 354px;
+	height: 56px;
+	font-weight: 400;
+	font-size: 16px;
+	color: (--dark-primary);
+	background-color: var(--light-grey);
+}
+
+.form__input::placeholder {
+	color: rgba(42, 37, 75, 0.2);
+}
