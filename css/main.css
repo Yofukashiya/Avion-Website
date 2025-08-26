@@ -13,6 +13,7 @@
 @import url("./blocks/_social.css");
 @import url("./blocks/_header.css");
 @import url("./blocks/_logo.css");
+@import url("./blocks/_notice.css");
 @import url("./blocks/_nav.css");
 @import url("./blocks/_hero.css");
 @import url("./blocks/_benefits.css");
@@ -21,3 +22,6 @@
 @import url("./blocks/_newsletter.css");
 @import url("./blocks/_about.css");
 @import url("./blocks/_footer.css");
+
+/* About page */
+@import url("./blocks/_about-hero.css");
