@@ -30,4 +30,9 @@
 	font-weight: 400;
 	font-size: 16px;
 	color: var(--dark-primary);
+	background-color: inherit;
+}
+
+.stepper--cart {
+	background: var(--light-grey);
 }
