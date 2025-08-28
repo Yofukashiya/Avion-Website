@@ -22,21 +22,23 @@ if (stepperEls) {
 		let count = Number(stepperInputEl.value);
 
 		stepperInputEl.addEventListener("change", () => {
-			stepperMinusBtnEl.classList.remove("stepper__btn--disabled");
-			stepperPlusBtnEl.classList.remove("stepper__btn--disabled");
+			stepperMinusBtnEl.disabled = false;
+			stepperPlusBtnEl.disabled = false;
 
 			if (stepperInputEl.value <= stepperMin) {
 				stepperInputEl.value = stepperMin;
 				count = stepperMin;
-				stepperMinusBtnEl.classList.add("stepper__btn--disabled");
-				stepperPlusBtnEl.classList.remove("stepper__btn--disabled");
+
+				stepperMinusBtnEl.disabled = true;
+				stepperPlusBtnEl.disabled = false;
 			}
 
 			if (stepperInputEl.value >= stepperMax) {
 				stepperInputEl.value = stepperMax;
 				count = stepperMax;
-				stepperPlusBtnEl.classList.add("stepper__btn--disabled");
-				stepperMinusBtnEl.classList.remove("stepper__btn--disabled");
+
+				stepperPlusBtnEl.disabled = true;
+				stepperMinusBtnEl.disabled = false;
 			}
 		});
 
@@ -48,13 +50,11 @@ if (stepperEls) {
 				stepperInputEl.value = count;
 
 				if (count !== stepperMin) {
-					stepperMinusBtnEl.classList.remove(
-						"stepper__btn--disabled"
-					);
+					stepperMinusBtnEl.disabled = false;
 				}
 
 				if (count === stepperMax) {
-					stepperPlusBtnEl.classList.add("stepper__btn--disabled");
+					stepperPlusBtnEl.disabled = true;
 				}
 			}
 		});
@@ -67,11 +67,11 @@ if (stepperEls) {
 				stepperInputEl.value = count;
 
 				if (count !== stepperMax) {
-					stepperPlusBtnEl.classList.remove("stepper__btn--disabled");
+					stepperPlusBtnEl.disabled = false;
 				}
 
 				if (count === stepperMin) {
-					stepperMinusBtnEl.classList.add("stepper__btn--disabled");
+					stepperMinusBtnEl.disabled = true;
 				}
 			}
 		});

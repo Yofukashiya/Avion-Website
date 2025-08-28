@@ -15,9 +15,28 @@
 	font-weight: 400;
 	font-size: 16px;
 	color: var(--dark-primary);
+	transition: var(--main-transition);
 }
 
-.stepper__btn--disabled {
+.stepper__btn:focus {
+	outline: none;
+}
+
+.stepper__btn:focus-visible {
+	outline: var(--outline);
+}
+
+@media (any-hover: hover) {
+	.stepper__btn:hover {
+		color: var(--primary);
+	}
+}
+
+.stepper__btn:active {
+	color: var(--border-dark);
+}
+
+.stepper__btn:disabled {
 	pointer-events: none;
 	color: var(--border-grey);
 }
@@ -31,6 +50,14 @@
 	font-size: 16px;
 	color: var(--dark-primary);
 	background-color: inherit;
+}
+
+.stepper__input:focus {
+	outline: none;
+}
+
+.stepper__input:focus-visible {
+	outline: var(--outline);
 }
 
 .stepper--cart {

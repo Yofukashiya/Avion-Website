@@ -37,6 +37,11 @@
 	opacity: 1;
 }
 
+.custom-checkbox__input:focus-visible + .custom-checkbox__icon {
+	outline: var(--outline);
+	outline-offset: var(--outline-offset);
+}
+
 .custom-checkbox__text {
 	font-weight: 400;
 	font-size: 16px;
