@@ -36,6 +36,26 @@
 	font-size: 14px;
 	color: var(--white);
 	text-decoration: none;
+	transition: var(--main-transition);
+}
+
+.footer__link:focus {
+	outline: none;
+}
+
+.footer__link:focus-visible {
+	outline: var(--outline);
+	outline-offset: var(--outline-offset);
+}
+
+@media (any-hover: hover) {
+	.footer__link:hover {
+		color: var(--primary);
+	}
+}
+
+.footer__link:active {
+	color: var(--border-grey);
 }
 
 .footer__form .form__input {

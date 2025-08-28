@@ -12,6 +12,10 @@
 	cursor: pointer;
 }
 
+.btn:focus {
+	outline: none;
+}
+
 .btn--theme-dark {
 	color: var(--white);
 	background: rgba(249, 249, 249, 0.15);
@@ -30,4 +34,39 @@
 .btn--theme-white {
 	color: var(--dark-primary);
 	background: var(--white);
+}
+
+.btn--theme-darker:focus-visible,
+.btn--theme-dark:focus-visible {
+	outline: 2px dashed var(--border-dark);
+	outline-offset: var(--outline-offset);
+}
+
+.btn--theme-light:focus-visible,
+.btn--theme-white:focus-visible {
+	outline: 2px dashed var(--primary);
+	outline-offset: var(--outline-offset);
+}
+
+@media (any-hover: hover) {
+	.btn--theme-darker:hover,
+	.btn--theme-dark:hover {
+		color: var(--dark-primary);
+		background-color: var(--border-grey);
+	}
+
+	.btn--theme-light:hover,
+	.btn--theme-white:hover {
+		background-color: #dad1d2;
+	}
+}
+
+.btn--theme-darker:active,
+.btn--theme-dark:active {
+	background-color: var(--white);
+}
+
+.btn--theme-light:active,
+.btn--theme-white:active {
+	background-color: #efefef;
 }

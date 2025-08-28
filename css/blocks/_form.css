@@ -17,3 +17,11 @@
 .form__input::placeholder {
 	color: rgba(42, 37, 75, 0.2);
 }
+
+.form__input:focus {
+	outline: none;
+}
+
+.form__input:focus-visible {
+	outline: var(--outline);
+}
