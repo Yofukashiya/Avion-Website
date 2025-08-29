@@ -10,6 +10,7 @@
 @import url("./blocks/_grid.css");
 @import url("./blocks/_centered.css");
 @import url("./blocks/_form.css");
+@import url("./blocks/_burger.css");
 @import url("./blocks/_stepper.css");
 @import url("./blocks/_social.css");
 @import url("./blocks/_header.css");
@@ -37,3 +38,5 @@
 
 /* Cart page */
 @import url("./blocks/_cart.css");
+
+@import url("./blocks/_media.css");
