@@ -164,6 +164,14 @@
 		width: auto;
 	}
 
+	.notice {
+		justify-content: flex-start;
+	}
+
+	.notice__text {
+		max-width: 294px;
+	}
+
 	.header__list {
 		padding-top: 24px;
 		flex-direction: column;
@@ -307,5 +315,62 @@
 
 	.social {
 		display: none;
+	}
+
+	.about-hero__title {
+		font-size: 32px;
+		max-width: none;
+	}
+
+	.about-hero__content {
+		padding: 32px 0;
+	}
+
+	.brand-info {
+		padding: 32px 0;
+	}
+
+	.brand-info__content {
+		flex-direction: column;
+		gap: 24px;
+	}
+
+	.brand-info__text {
+		padding: 36px 32px;
+		padding-bottom: 30px;
+		width: 100%;
+		min-height: 281px;
+	}
+
+	.brand-info__description {
+		font-size: 14px;
+	}
+
+	.brand-info__image {
+		width: 100%;
+	}
+
+	.brand-info__picture {
+		height: 259px;
+	}
+
+	.about--reverse .about__content {
+		flex-direction: column-reverse;
+	}
+
+	.about--reverse .about__info {
+		padding: 32px 24px;
+		padding-bottom: 62px;
+	}
+
+	.about__btn {
+		margin-top: 48px;
+	}
+
+	.benefits--about .benefits__item {
+		padding: 24px;
+		padding-top: 72px;
+		padding-bottom: 36px;
+		background-position: 24px 36px;
 	}
 }
