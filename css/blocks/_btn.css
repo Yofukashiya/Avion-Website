@@ -16,6 +16,14 @@
 	outline: none;
 }
 
+.btn--with-icon {
+	gap: 12px;
+}
+
+.btn--with-icon svg {
+	transition: transform 0.3s ease;
+}
+
 .btn--theme-dark {
 	color: var(--white);
 	background: rgba(249, 249, 249, 0.15);

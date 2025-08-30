@@ -373,4 +373,36 @@
 		padding-bottom: 36px;
 		background-position: 24px 36px;
 	}
+
+	.inner-hero__content {
+		justify-content: center;
+		padding-bottom: 32px;
+		min-height: 146px;
+	}
+
+	.catalog__column {
+		grid-column: 4 span;
+	}
+
+	.catalog__wrapper {
+		grid-column: 4 span;
+	}
+
+	.catalog__mobile-btn {
+		display: inline-flex;
+		margin-bottom: 20px;
+	}
+
+	.catalog__mobile-btn--active svg {
+		transform: rotate(180deg);
+	}
+
+	.filters {
+		display: none;
+		margin-bottom: 20px;
+	}
+
+	.filters--active {
+		display: flex;
+	}
 }

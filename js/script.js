@@ -2,6 +2,15 @@ const noticeEl = document.querySelector(".notice");
 const stepperEls = document.querySelectorAll(".stepper");
 const burgerEl = document.querySelector(".burger");
 const headerListEl = document.querySelector(".header__list");
+const filtersBtnEl = document.querySelector(".catalog__mobile-btn");
+
+if (filtersBtnEl) {
+	const filtersEl = document.querySelector(".filters");
+	filtersBtnEl.addEventListener("click", () => {
+		filtersBtnEl.classList.toggle("catalog__mobile-btn--active");
+		filtersEl.classList.toggle("filters--active");
+	});
+}
 
 if (headerListEl) {
 	new TransferElements({
